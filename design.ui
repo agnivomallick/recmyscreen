@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>590</width>
+    <height>562</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">RecMyScreen</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources/resources.qrc">
+    <normaloff>:/icons/video_icon.ico</normaloff>:/icons/video_icon.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 111, 157)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="bg">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>-20</y>
+      <width>791</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resources/resources.qrc">:/backgrounds/background.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="appTitle">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>30</y>
+      <width>278</width>
+      <height>72</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: teal;
+color: yellow;
+padding: 15px;
+text-align: center;
+
+font-size: 37px;
+font-family: Arial, verdana, sans-serif;</string>
+    </property>
+    <property name="text">
+     <string>RecMyScreen</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="app_desc">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>160</y>
+      <width>175</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 29px;
+font-family: &quot;Agency FB&quot;, sans-serif;
+color: khaki;
+background-color: olive;</string>
+    </property>
+    <property name="text">
+     <string>Record your screen.</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="playbtn">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>310</y>
+      <width>75</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+width: 33px;
+border-radius: 25%;
+border: 3px solid white;
+outline: 3px solid red;
+background-color: yellow;
+font-size: 22px;
+
+icon-size: 128px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resources/resources.qrc">
+      <normaloff>:/images/play.png</normaloff>:/images/play.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pausebtn">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>310</y>
+      <width>75</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;
+outline: none;
+width: 33px;
+border-radius: 25%;
+background-color: yellow;
+font-size: 22px;
+
+icon-size: 128px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resources/resources.qrc">
+      <normaloff>:/images/pause.png</normaloff>:/images/pause.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stopbtn">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>310</y>
+      <width>75</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;
+outline: none;
+width: 33px;
+border-radius: 25%;
+background-color: yellow;
+font-size: 22px;
+
+icon-size: 128px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resources/resources.qrc">
+      <normaloff>:/images/stop.png</normaloff>:/images/stop.png</iconset>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="filename">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>400</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 5px;
+background-color: olive;
+color: lime;
+font-family: Arial, verdana, sans-serif;
+font-size: 16px;</string>
+    </property>
+    <property name="placeholderText">
+     <string>Filename</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="filetype">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>460</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: olive;
+color: lime;
+font-family: cursive;
+border-radius: 15px;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string notr="true">mp4</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="resources/resources.qrc"/>
+  <include location="resources/resources.qrc"/>
+  <include location="resources/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

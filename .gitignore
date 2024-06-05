@@ -1,0 +1,16 @@
+# Git ignore.
+
+output/
+
+.vs/
+
+__pycache__/
+
+env/
+
+recmyscreen.pyproj
+
+recmyscreen.sln
+
+version_file_creator.py
+

@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="backgrounds">
+    <file>background.png</file>
+  </qresource>
+  <qresource prefix="images">
+    <file>pause.png</file>
+    <file>play.png</file>
+    <file>stop.png</file>
+  </qresource>
+  <qresource prefix="icons">
+    <file>video_icon.ico</file>
+  </qresource>
+</RCC>
