@@ -19,7 +19,8 @@ You can also do build from source by following the steps.
 - **IT IS RECOMMENDED TO CREATE A VIRTUAL ENVIRONMENT**.
 - However you **can** run in a normal environment.
 - Install the packages using `pip install -r requirements.txt`. Make sure to navigate to the directory where you cloned it.
-- DO NOT EDIT ANYTHING (or rather, adhere to the [MIT License](https://github.com/agnivomallick/recmyscreen/blob/main/LICENSE)
+- Please adhere to the [MIT License](https://github.com/agnivomallick/recmyscreen/blob/main/LICENSE)
+- But I strongly recommend to NOT edit the resources/ directory as it contains the resources and a resource file that helps to import them from the app. If you edit it cannot import the resources and as a result you will have a no-graphics like app.
 - Then you can build your exe.
 - You can use pyinstaller, cx-freeze, or anything you want. This part (from now) I am not mentioning.
 - Then you can package it as a setup file and distribute.
